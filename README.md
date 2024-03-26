@@ -11,27 +11,28 @@ Version: 2024-03-25-git-ecdc94b97f-full_build-www.gyan.dev
 
 
 # How to use
-Download and install/extract FFmpeg. 
-Download the compiled version of FFmpeg GUI for Godot here: (Build not yet available)
+1. Download and install/extract FFmpeg. 
+
+2. Download the compiled version of FFmpeg GUI for Godot here: (Build not yet available)
 Or compile the source code in Godot. 
 
-Get the file path to your FFmpeg filepath. 
+3. Get the file path to your FFmpeg filepath. 
 Example:
 C:\Program Files\FFMPEG\ffmpeg-2024-03-25-git-ecdc94b97f-full_build\bin\
 Remember the final slash.
 You can click the "Update Executible Path" to save the file path so the next time you open the program, the filepath is already there.
 Save file is in text format "config.dat" and is created when you save for the first time next to the executible. 
 
-Find an MP4 file you want to use.
+4. Find an MP4 file you want to use.
 You can use the folder and/or the file text boxes. The code combines them.
 I made a separate file text box so you can more easily convert multiple mp4 to ogg 
 without messing up the containing folder.
 
-Enter the file path WITH the file extension. (mp4.)
+5. Enter the file path WITH the file extension. (mp4.)
 
 
-Specify the output folder and file name WITH file extension. (.ogg)
+6. Specify the output folder and file name WITH file extension. (.ogg)
 
-Click "Process File" button.
-Wait for command prompt to finish executing.
-Close command prompt, repeat for subsequent files.
+7. Click "Process File" button.
+8. Wait for command prompt to finish executing.
+9. Close command prompt, repeat for subsequent files.
