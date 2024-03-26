@@ -13,7 +13,7 @@ public partial class MainProcessScript : Control {
 
 	[Export]
 	LineEdit ffmpegExecutibleField;
-	//F:\Program Files\FFMPEG\ffmpeg-2024-03-25-git-ecdc94b97f-full_build\bin\ffmpeg.exe
+	//C:\Program Files\FFMPEG\ffmpeg-2024-03-25-git-ecdc94b97f-full_build\bin\ffmpeg.exe
 
 	[ExportGroup("Input Fields")]
 	[Export]
@@ -26,7 +26,7 @@ public partial class MainProcessScript : Control {
 	LineEdit outputFolder;
 	[Export]
 	LineEdit outputFile;
-	//G:/Projects/2024/Game dev/JTAC Beats/Tutorial Assets/Renders/
+	//C:/Documents/Videos/
 
 	const string dataFileName = "config.dat";
 
