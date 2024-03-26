@@ -13,7 +13,7 @@ Version: 2024-03-25-git-ecdc94b97f-full_build-www.gyan.dev
 # How to use
 1. Download and install/extract FFmpeg. 
 
-2. Download the compiled version of FFmpeg GUI for Godot here: (Build not yet available)
+2. Download the compiled version of FFmpeg GUI for Godot here: (Build not yet available).
 Or compile the source code in Godot. 
 
 3. Get the file path to your FFmpeg filepath. 
