@@ -1,0 +1,121 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjsnse08dwp5e"]
+
+[ext_resource type="Script" path="res://MainProcessScript.cs" id="1_y7s2k"]
+
+[node name="Control" type="Control" node_paths=PackedStringArray("processButton", "ffmpegExecutibleField", "inputFolder", "inputFile", "outputFolder", "outputFile")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y7s2k")
+processButton = NodePath("Process Button")
+ffmpegExecutibleField = NodePath("Executible VBoxContainer/Executible LineEdit")
+inputFolder = NodePath("Input File VBoxContainer/HBoxContainer/Input Folder LineEdit")
+inputFile = NodePath("Input File VBoxContainer/HBoxContainer/Input File Name LineEdit")
+outputFolder = NodePath("Output File VBoxContainer2/HBoxContainer/Output Folder LineEdit")
+outputFile = NodePath("Output File VBoxContainer2/HBoxContainer/Output File Name LineEdit")
+
+[node name="Title Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "FFMPEG Command Line Utility Program
+by: hislittlecuzin"
+
+[node name="Info Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 339.0
+offset_right = 756.0
+offset_bottom = 518.0
+text = "This is a simple to use FFMPEG.exe GUI. It calls the command prompt to easily convert MP4 files
+to the specific OGG format for use in the Godot 4.X engine with the VideoStreamPlayer node.
+
+Wait for the command prompt window to finish before closing it. 
+
+Should you like the program, check out my games on Steam like \"Holy Journey of Salvation\" and
+\"JTAC Beats.\" "
+
+[node name="Executible VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 277.0
+offset_top = 570.0
+offset_right = 1145.0
+offset_bottom = 637.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Executible VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Executible VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Main Executible Filepath"
+
+[node name="Update Executible Path Button" type="Button" parent="Executible VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Update Executible Path"
+
+[node name="Executible LineEdit" type="LineEdit" parent="Executible VBoxContainer"]
+custom_minimum_size = Vector2(500, 40)
+layout_mode = 2
+placeholder_text = "Your folder containing FFMPEG.exe IE: ( c:/program files/ ) Include final \"/\" or \"\\\""
+
+[node name="Input File VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+offset_left = 4.0
+offset_top = 122.0
+offset_right = 1133.0
+offset_bottom = 180.0
+
+[node name="Input Label" type="Label" parent="Input File VBoxContainer"]
+layout_mode = 2
+text = "Input File:"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Input File VBoxContainer"]
+layout_mode = 2
+
+[node name="Input Folder LineEdit" type="LineEdit" parent="Input File VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(800, 0)
+layout_mode = 2
+placeholder_text = "Folder/path IE: ( C:/Documents/ )"
+
+[node name="Input File Name LineEdit" type="LineEdit" parent="Input File VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(325, 0)
+layout_mode = 2
+placeholder_text = "File Name IE: ( foobar.mp4 )"
+
+[node name="Output File VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 2
+offset_left = 4.0
+offset_top = 229.0
+offset_right = 1133.0
+offset_bottom = 287.0
+
+[node name="Output Label" type="Label" parent="Output File VBoxContainer2"]
+layout_mode = 2
+text = "Output File:"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Output File VBoxContainer2"]
+layout_mode = 2
+
+[node name="Output Folder LineEdit" type="LineEdit" parent="Output File VBoxContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(800, 0)
+layout_mode = 2
+placeholder_text = "Folder/path IE: ( C:/Documents/ )"
+
+[node name="Output File Name LineEdit" type="LineEdit" parent="Output File VBoxContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(325, 0)
+layout_mode = 2
+placeholder_text = "File Name IE: ( foobar.ogg )"
+
+[node name="Process Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 819.0
+offset_top = 317.0
+offset_right = 918.0
+offset_bottom = 348.0
+text = "Process File"
+
+[connection signal="button_down" from="Executible VBoxContainer/HBoxContainer/Update Executible Path Button" to="." method="SaveFFMPEGFilePath"]
+[connection signal="button_down" from="Process Button" to="." method="ProcessVideo"]

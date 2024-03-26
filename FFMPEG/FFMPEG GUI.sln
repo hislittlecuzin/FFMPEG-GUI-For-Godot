@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFMPEG GUI", "FFMPEG GUI.csproj", "{E5B3872D-073D-48B5-A5EF-ED1DBD1EA44C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5B3872D-073D-48B5-A5EF-ED1DBD1EA44C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5B3872D-073D-48B5-A5EF-ED1DBD1EA44C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5B3872D-073D-48B5-A5EF-ED1DBD1EA44C}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{E5B3872D-073D-48B5-A5EF-ED1DBD1EA44C}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{E5B3872D-073D-48B5-A5EF-ED1DBD1EA44C}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{E5B3872D-073D-48B5-A5EF-ED1DBD1EA44C}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
