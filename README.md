@@ -10,7 +10,7 @@ Working with FFmpeg 64 bit full build from gyan.dev
 Version: 2024-03-25-git-ecdc94b97f-full_build-www.gyan.dev 
 
 
-#How to use
+# How to use
 Download and install/extract FFmpeg. 
 Download the compiled version of FFmpeg GUI for Godot here: (Build not yet available)
 Or compile the source code in Godot. 
